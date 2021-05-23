@@ -1,0 +1,32 @@
+﻿<Window x:Class="Hackathon.ProfilJoueur"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hackathon"
+        mc:Ignorable="d"
+        Icon="icon/profile.ico"
+        Title="Profile" Height="450.666" Width="408.112" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Background="#151E30">
+        <Label Content="Profil" FontWeight="Bold" FontSize="25" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="160,10,0,0" Width="82" Height="40"/>
+
+        <TextBlock x:Name="lab_nom" FontSize="20" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="47,78,0,0" Width="143" Height="33"/>
+        <TextBlock x:Name="lab_prenom"  FontSize="20" Foreground="white" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="47,131,0,0" Width="143" Height="33"/>
+        <TextBlock x:Name="lab_pseudo"  FontSize="20" Foreground="white" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="47,241,0,0" Width="143" Height="33"/>
+        <TextBlock x:Name="lab_jeu"  FontSize="20" Foreground="white" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="47,298,0,0" Width="345" Height="38"/>
+        <TextBlock x:Name="lab_points"  FontSize="20" Foreground="white" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="255,247,0,0" Width="137" Height="35"/>
+        <TextBlock x:Name="lab_nationalite"  FontSize="20" Foreground="white" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="47,186,0,0" Width="143" Height="33"/>
+        <TextBlock x:Name="lab_mail"  FontSize="20" Foreground="white" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="47,359,0,0" Width="248" Height="33"/>
+        <TextBlock x:Name="lab_statut"  FontSize="20" Foreground="white" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="255,223,0,0" Width="147" Height="33"/>
+        <Image x:Name="img" HorizontalAlignment="Left" Height="158" VerticalAlignment="Top" Width="158" Margin="195,62,0,0" Stretch="Fill" />
+        <Label Content="Nom :" HorizontalAlignment="Left" Height="27" Margin="19,60,0,0" VerticalAlignment="Top" Width="65" Foreground="#fff"/>
+        <Label Content="Prenom :" HorizontalAlignment="Left" Height="27" Margin="19,113,0,0" VerticalAlignment="Top" Width="78" Foreground="#fff"/>
+        <Label Content="Nationalite :" HorizontalAlignment="Left" Height="27" Margin="19,164,0,0" VerticalAlignment="Top" Width="78" Foreground="#fff"/>
+        <Label Content="Pseudo :" HorizontalAlignment="Left" Height="27" Margin="19,219,0,0" VerticalAlignment="Top" Width="78" Foreground="#fff"/>
+        <Label Content="Tournoi : " HorizontalAlignment="Left" Height="27" Margin="195,225,0,0" VerticalAlignment="Top" Width="55" Foreground="#fff"/>
+        <Label Content="Mail :" HorizontalAlignment="Left" Height="27" Margin="19,341,0,0" VerticalAlignment="Top" Width="78" Foreground="#fff"/>
+        <Label Content="Jeu :" HorizontalAlignment="Left" Height="27" Margin="19,280,0,0" VerticalAlignment="Top" Width="78" Foreground="#fff"/>
+        <Label Content="Points :" HorizontalAlignment="Left" Height="27" Margin="195,252,0,0" VerticalAlignment="Top" Width="55" Foreground="#fff"/>
+
+    </Grid>
+</Window>

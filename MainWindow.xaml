@@ -1,0 +1,30 @@
+﻿<Window x:Class="Hackathon.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hackathon"
+        mc:Ignorable="d"
+        Icon="icon/logo.ico"
+        Title="name.n0t.found" Height="576" Width="1024" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" KeyDown="Window_KeyDown" Loaded="Window_Loaded">
+    <Grid Background="#151E30">
+        <TextBox x:Name="recherche_joueur_txt" HorizontalAlignment="Left" Height="33" TextWrapping="Wrap"  VerticalAlignment="Top" Width="355" Margin="225,30,0,0" FontSize="20" />
+        <Button Content="Ajouter Joueur" FontSize="20" Foreground="White" BorderThickness="2" BorderBrush="Black" Background="#2C3546" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Width="220" Margin="767,87,0,0" Height="75" Click="Ajout_joueur"/>
+        <Button Content="Modifier Joueur" FontSize="20" Foreground="White" BorderThickness="2" BorderBrush="Black" Background="#2C3546" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Width="220" Margin="767,250,0,0" Height="75" Click="Modifier_Joueur"/>
+        <Button Content="Supprimer Joueur" FontSize="20" Foreground="White" BorderThickness="2" BorderBrush="Black" Background="#2C3546" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Width="220" Margin="767,410,0,0" Height="75" Click="Supprimer_joueur"/>
+        <DataGrid x:Name="dt_grid" BorderThickness="0" Background="#2C3546" CanUserReorderColumns="False" HorizontalAlignment="Left" Height="398" VerticalAlignment="Top" Width="727" Margin="18,87,0,0" SelectionChanged="Selection_rows" AutoGenerateColumns="False" CanUserResizeColumns="False" CanUserResizeRows="False" ScrollViewer.CanContentScroll="True" PreviewKeyDown="dt_grid_KeyDown" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Nom" Width="1*" CanUserResize="False" Binding="{Binding Nom}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Prénom" Width="1*" CanUserResize="False" Binding="{Binding Prenom}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Pseudo" Width="1*" CanUserResize="False" Binding="{Binding Pseudo}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Nationalité" Width="1*" CanUserResize="False" Binding="{Binding Nationalite}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Jeu" Width="1*" CanUserResize="False" Binding="{Binding Jeu}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Statut" Width="1*" CanUserResize="False" Binding="{Binding TypeJoueur}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Points" Width="0.5*" CanUserResize="False" Binding="{Binding Points}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Mail" Width="1*" CanUserResize="False" Binding="{Binding Mail}" IsReadOnly="True"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Recherche : "  FontSize="20" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="92,28,0,0" Width="113" Height="33"/>
+        <Button Content="OK" FontSize="20" Foreground="White" BorderThickness="2" BorderBrush="Black" Background="#2C3546" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="605,31,0,0" Height="34" Click="Recherche_joueur"/>
+    </Grid>
+</Window>
